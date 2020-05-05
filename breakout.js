@@ -19,8 +19,8 @@ const color = {
   ball: '#0095DD',
   paddle: '#0095DD',
   brick: '#0095DD',
-  score: '#0095dd',
-  life: '#0095dd',
+  score: '#fff',
+  life: '#fff',
 }
 
 var rightPressed = false
