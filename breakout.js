@@ -192,6 +192,6 @@ function drawScore () {
 
 function drawLife () {
   ctx.font = '16px Arial'
-  ctx.fillStyle = color.life
+  ctx.fillStyle = life.color
   ctx.fillText('Life: ' + life.value, canvas.width - 65, 20)
 }
