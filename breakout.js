@@ -56,15 +56,23 @@ for (c = 0; c < brick.columnCount; c++) {
 document.addEventListener('keydown', keyDownHandler, false)
 document.addEventListener('keyup',   keyUpHandler, false)
 document.addEventListener('mousemove', mouseMoveHandler, false)
-draw()
+preparation()
 
-function draw () {
-  ctx.clearRect(0, 0, canvas.width, canvas.height)
+function startButton () {
+  draw()
+}
+
+function preparation () {
   drawBricks()
   drawBall()
   drawPaddle()
   drawScore()
   drawLife()
+}
+
+function draw () {
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
+  preparation()
   collisionDetection()
 
   if (ball.x + dx > canvas.width - ball.radius || ball.x + dx < ball.radius) {

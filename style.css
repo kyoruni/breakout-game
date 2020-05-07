@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.startButton {
+  background: '#ff99cc';
+}
+
 #myCanvas {
   background: #333333;
   display: block;
